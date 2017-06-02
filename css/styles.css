@@ -17,6 +17,35 @@ input {
   font-size: 18px;
 }
 
+.form_group {
+
+}
+
+#name_styles {
+  color: #C0E7DF;
+  text-shadow: 2px 2px #000;
+}
+
+#type_styles {
+  color: #C0E7DF;
+  text-shadow: 2px 2px #000;
+}
+
+#company_styles {
+  color: #8DC3B4;
+  text-shadow: 2px 2px #000;
+}
+
+#line_styles {
+  color: #73B19F;
+  text-shadow: 2px 2px #000;
+}
+
+#role_styles {
+  color: #5AA08A;
+  text-shadow: 2px 2px #000;
+}
+
 #thanks, #c, #java, #php, #ruby, #css {
   display: none;
   font-size: 20px;
@@ -24,4 +53,8 @@ input {
 
 #thanks {
   font-size: 18px;
+}
+
+h3 {
+
 }
