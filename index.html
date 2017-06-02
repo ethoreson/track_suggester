@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Track Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Epicodus Track Suggester</h1>
+      <p>Give us some info on what you might be interested in, and we'll suggest a track for you!</p>
+      <form id="survey">
+        <!-- Form item -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <!-- Dropdown item -->
+        <div class="form-group">
+          <label for="company">What kind of company would you like to work for?</label>
+          <select class="form-control" id="company">
+            <option>Large Tech Giant</option>
+            <option>Enterprise Corporation</option>
+            <option>Content Management Organization</option>
+            <option>Startup Company</option>
+            <option>Design Company</option>
+          </select>
+        </div>
+        <!-- Radio item -->
+        <div class="radio">
+          <h2>What kind of role would you like to have?</h2>
+          <label>
+            <input type="radio" name="role" value="business_software" checked>
+            Business Software Developer
+          </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="role" value="high_performance_applications">
+              High-performance Applications Manager
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="role" value="backend_developer">
+              Back-end Developer
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="role" value="user_interaction">
+              User Interaction Expert
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="role" value="front_end">
+              Front-end Developer
+            </label>
+          </div>
+          <!-- Dropdown item -->
+          <div class="form-group">
+            <label for="company">Which line looks most appealing?</label>
+            <select class="form-control" id="line">
+              <option>System.Console.WriteLine("Hello, World!");</option>
+              <option>System.out.println("Hello, World");</option>
+              <option>echo 'Hello World'; ?>;</option>
+              <option>puts "Hello, world"</option>
+              <option>.hello_word { text-align: left; }</option>
+            </select>
+          </div>
+      </form>
+    </div>
+  </body>
+</html>
