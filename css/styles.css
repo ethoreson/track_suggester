@@ -66,3 +66,9 @@ h3 {
   color: #8FDCB8;
   text-shadow: 2px 2px #000;
 }
+
+#submitButton {
+  border-radius: 8px;
+  background-color: #8FDCB8;
+  border: 2px solid black;
+}

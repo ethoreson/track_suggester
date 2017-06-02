@@ -7,8 +7,6 @@ $(document).ready(function() {
     var formLine = $("#line").val();
     var formRole = $("input:radio[name=role]:checked").val();
 
-    console.log(formRole);
-
     var c_total = 0;
     var java_total = 0;
     var php_total = 0;
@@ -66,7 +64,7 @@ $(document).ready(function() {
       css_total += 1;
     }
 
-    console.log(c_total, java_total, php_total, ruby_total, css_total);
+//    console.log(c_total, java_total, php_total, ruby_total, css_total);
 
     if ((c_total > java_total) && (c_total > php_total) && (c_total > ruby_total) && (c_total > css_total)) {
         $("#c").fadeToggle();
@@ -79,8 +77,5 @@ $(document).ready(function() {
     } else {
       $("#css").fadeToggle();
     }
-
-
   });
-
 });
