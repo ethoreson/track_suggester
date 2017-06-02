@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <h1>Epicodus Track Suggester</h1>
-      <p>Give us some info on what you might be interested in, and we'll suggest a track for you!</p>
+      <p id=subheading>Give us some info on what you might be interested in, and we'll suggest a track for you!</p>
       <form id="survey">
         <!-- Form item -->
         <div class="form-group">
@@ -35,7 +35,7 @@
             <option>Microsoft</option>
             <option>Zillow</option>
             <option>Amazon</option>
-            <option>Swecker (random startup)</option>
+            <option>Swecker</option>
             <option>Audible, Inc.</option>
           </select>
         </div>
@@ -86,7 +86,8 @@
       </form>
 
       <div class="result">
-        <div id="c#">
+        <p id="thanks">Thanks, <span class="name"></span>. We suggest you take:</p>
+        <div id="c">
           <h3>C#/.NET</h3>
           <p>The C# ("C sharp") programming language is most commonly used with the .NET framework. Students who are well-versed in C# programming can use it to create client applications, database applications, distributed components, and much more. Students who learn C# programming and combine it with their knowledge of the .NET framework can target larger enterprises, government agencies, and companies serving enterprise and government clients for employment. Companies using C# and .NET who have hired Epicodus graduates include Windsor and Incomm.</p>
         </div>
@@ -107,7 +108,7 @@
           <p>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and printers. HTML — used for building the structure of the page — and CSS — used for the visual layout — are the two basic languages involved in the building of web pages and web applications.</CSS>
         </div>
       </div>
-      
+
     </div>
   </body>
 </html>

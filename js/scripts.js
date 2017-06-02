@@ -7,10 +7,19 @@ $(document).ready(function() {
     var formLine = $("#line").val();
     var formRole = $("input:radio[name=role]:checked").val();
 
-
-    console.log ("Thanks, " + formName + ". We suggest you take:");
-
-    $(".result#" + formLine).toggle();
+    $("span.name").text(formName);
+    $("#thanks").show();
+    if (formCompany === "Microsoft") {
+      $("#c").show();
+    } else if (formCompany === "Zillow") {
+      $("#java").show();
+    } else if (formCompany === "Amazon") {
+      $("#php").show();
+    } else if (formCompany === "Swecker") {
+      $("#ruby").show();
+    } else {
+      $("#css").show();
+    }
   });
 
 });

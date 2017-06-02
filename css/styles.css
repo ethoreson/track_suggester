@@ -3,7 +3,7 @@ body {
   background-color: #8A8A8A;
 }
 
-p {
+#subheading {
   font-size: 16px;
   font-style: italic;
 }
@@ -17,6 +17,11 @@ input {
   font-size: 18px;
 }
 
-#c, #java, #php, #ruby, #css {
+#thanks, #c, #java, #php, #ruby, #css {
   display: none;
+  font-size: 20px;
+}
+
+#thanks {
+  font-size: 18px;
 }
