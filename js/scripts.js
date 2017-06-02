@@ -59,7 +59,7 @@ $(document).ready(function() {
     } else {
       css_total += 1;
     }
-    console.log(c_total, java_total, php_total, ruby_total, css_total);
+
     if (formLine === "system") {
       c_total += 1;
     } else if (formLine === "out") {
