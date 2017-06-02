@@ -69,6 +69,11 @@ $(document).ready(function() {
 
     if ((c_total > java_total) && (c_total > php_total) && (c_total > ruby_total) && (c_total > css_total)) {
         $("#c").fadeToggle();
+        $("java").hide();
+        $("java").hide();
+        $("php").hide();
+        $("ruby").hide();
+        $("css").hide();
     } else if ((java_total > php_total) && (java_total > ruby_total) && (java_total > css_total)) {
         $("#java").fadeToggle();
     } else if ((php_total > ruby_total) && (php_total > css_total)) {
