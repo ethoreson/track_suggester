@@ -16,3 +16,7 @@ label, h2 {
 input {
   font-size: 18px;
 }
+
+#c, #java, #php, #ruby, #css {
+  display: none;
+}
