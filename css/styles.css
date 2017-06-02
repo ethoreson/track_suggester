@@ -4,12 +4,20 @@ body {
   background-size: cover;
 }
 
+img {
+  height: 100px;
+  width: 200px;
+  margin-bottom: 8px;
+}
+
 .container {
   border: black beige white beige;
 }
 
 h1 {
+  font-family: "Trebeuchet MS", sans-serif;
   color: #F5FFFD;
+  letter-spacing: 2px;
   text-shadow: 3px 3px #000;
   border-bottom: 6px solid white;
 }
@@ -27,33 +35,14 @@ input, p {
 label, h2 {
   font-size: 24px;
   font-weight: bold;
-  color: #A0E1C3;
+  color: white;
 }
 
-#name_styles {
-  color: #E4F9F1;
+#name_styles, #type_styles, #company_styles, #line_styles, #role_styles {
+  color: #00B3B4;
   text-shadow: 2px 2px #000;
 }
 
-#type_styles {
-  color: #D3F3E6;
-  text-shadow: 2px 2px #000;
-}
-
-#company_styles {
-  color: #C2EDDA;
-  text-shadow: 2px 2px #000;
-}
-
-#line_styles {
-  color: #B1E7CF;
-  text-shadow: 2px 2px #000;
-}
-
-#role_styles {
-  color: #A0E1C3;
-  text-shadow: 2px 2px #000;
-}
 
 #thanks, #c, #java, #php, #ruby, #css {
   display: none;
@@ -65,20 +54,24 @@ label, h2 {
   margin-top: 20px;
 }
 
-h3, a {
+h3 {
   font-size: 32px;
-  color: #8FDCB8;
   text-shadow: 2px 2px #000;
 }
 
-h3:hover {
+a:hover {
+  color: #FF5C5B;
   text-decoration: underline;
   cursor: pointer;
 }
 
+a {
+  color: #FF8786;
+}
+
 #submitButton {
   border-radius: 8px;
-  background-color: #8FDCB8;
+  background-color: #00B3B4;
   border: 1px solid black;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
