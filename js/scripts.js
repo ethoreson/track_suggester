@@ -8,17 +8,17 @@ $(document).ready(function() {
     var formRole = $("input:radio[name=role]:checked").val();
 
     $("span.name").text(formName);
-    $("#thanks").show();
+    $("#thanks").fadeToggle();
     if (formCompany === "Microsoft") {
-      $("#c").show();
+      $("#c").fadeToggle();
     } else if (formCompany === "Zillow") {
-      $("#java").show();
+      $("#java").fadeToggle();
     } else if (formCompany === "Amazon") {
-      $("#php").show();
+      $("#php").fadeToggle();
     } else if (formCompany === "Swecker") {
-      $("#ruby").show();
+      $("#ruby").fadeToggle();
     } else {
-      $("#css").show();
+      $("#css").fadeToggle();
     }
   });
 
