@@ -1,6 +1,7 @@
 body {
   margin: 20px;
-  background-color: #8A8A8A;
+  background-image: url(../img/background.jpeg);
+  background-size: cover;
 }
 
 .container {
@@ -18,13 +19,15 @@ h1 {
   font-style: italic;
 }
 
+input, p {
+  font-size: 18px;
+  color: white;
+}
+
 label, h2 {
   font-size: 24px;
   font-weight: bold;
-}
-
-input {
-  font-size: 18px;
+  color: #A0E1C3;
 }
 
 #name_styles {
@@ -62,13 +65,20 @@ input {
   margin-top: 20px;
 }
 
-h3 {
+h3, a {
+  font-size: 32px;
   color: #8FDCB8;
   text-shadow: 2px 2px #000;
+}
+
+h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #submitButton {
   border-radius: 8px;
   background-color: #8FDCB8;
-  border: 2px solid black;
+  border: 1px solid black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
