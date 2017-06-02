@@ -17,7 +17,7 @@ h1 {
   border-bottom: 6px solid white;
 }
 
-#subheading {
+.subheading {
   font-size: 16px;
   font-style: italic;
 }
@@ -32,11 +32,10 @@ label, h2 {
   color: white;
 }
 
-#name_styles, #type_styles, #company_styles, #line_styles, #role_styles {
+#name_styles, #type_styles, #company_styles, #personality_styles, #line_styles, #role_styles {
   color: #00B3B4;
   text-shadow: 2px 2px #000;
 }
-
 
 #thanks, #c, #java, #php, #ruby, #css {
   display: none;

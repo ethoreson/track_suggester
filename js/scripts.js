@@ -5,7 +5,7 @@ $(document).ready(function() {
     var php_total = 0;
     var ruby_total = 0;
     var css_total = 0;
-    
+
     $("#c").hide();
     $("#java").hide();
     $("#php").hide();
@@ -17,7 +17,8 @@ $(document).ready(function() {
     var formName = $("#name").val();
     var formType = $("#type").val();
     var formCompany = $("#company").val();
-    var formLine = $("#line").val();
+    var formPersonality = $("#personality").val();
+    var formLine = $("input:radio[name=line]:checked").val();
     var formRole = $("input:radio[name=role]:checked").val();
 
     $("span.name").text(formName);
@@ -47,13 +48,25 @@ $(document).ready(function() {
       css_total += 1;
     }
 
-    if (formLine === "System.Console.WriteLine('Hello, World!');") {
+    if (formPersonality === "Fun") {
       c_total += 1;
-    } else if (formLine === "System.out.println('Hello, World');") {
+    } else if (formPersonality === "Friendly") {
       java_total += 1;
-    } else if (formLine === "echo 'Hello World'; ?>;") {
+    } else if (formPersonality === "Unique") {
       php_total += 1;
-    } else if (formLine === "puts 'Hello, world'") {
+    } else if (formPersonality === "High-energy") {
+      ruby_total += 1;
+    } else {
+      css_total += 1;
+    }
+    console.log(c_total, java_total, php_total, ruby_total, css_total);
+    if (formLine === "system") {
+      c_total += 1;
+    } else if (formLine === "out") {
+      java_total += 1;
+    } else if (formLine === "echo") {
+      php_total += 1;
+    } else if (formLine === "puts") {
       ruby_total += 1;
     } else {
       css_total += 1;
@@ -71,7 +84,6 @@ $(document).ready(function() {
       css_total += 1;
     }
 
-    console.log(c_total, java_total, php_total, ruby_total, css_total);
 
     if ((c_total > java_total) && (c_total > php_total) && (c_total > ruby_total) && (c_total > css_total)) {
         $("#c").fadeToggle();

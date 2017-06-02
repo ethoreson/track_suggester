@@ -10,7 +10,8 @@
   <body>
     <div class="container">
       <h1><img src="img/epicodus.png" alt="epicodus logo"> Track Suggester</h1>
-      <p id=subheading>Give us some info on what you might be interested in, and we'll suggest a track for you!</p>
+      <p class=subheading>Give us some info on what you might be interested in, and we'll suggest a track for you!</p>
+      <p>**Disclaimer: This quiz is only meant to point you in the right direction. Almost anyone can succeed in almost any language.</p>
       <form id="survey">
         <!-- Form item -->
         <div class="form-group">
@@ -41,15 +42,47 @@
         </div>
         <!-- Dropdown item -->
         <div class="form-group">
-          <label id="line_styles" for="company">Which line looks most appealing?</label>
-          <select class="form-control" id="line">
-            <option>System.Console.WriteLine('Hello, World!');</option>
-            <option>System.out.println('Hello, World');</option>
-            <option>echo 'Hello World'; ?>;</option>
-            <option>puts 'Hello, world'</option>
-            <option>.hello_word { text-align: left; }</option>
+          <label id="personality_styles" for="company">Pick the word that best describes you:</label>
+          <select class="form-control" id="personality">
+            <option>Fun</option>
+            <option>Friendly</option>
+            <option>Unique</option>
+            <option>High-energy</option>
+            <option>Creative</option>
           </select>
         </div>
+        <!-- Radio item -->
+        <div class="radio">
+          <h2 id="line_styles">Which line looks most appealing?</h2>
+          <label>
+            <input type="radio" name="line" value="system" checked>
+            System.Console.WriteLine('Hello, World!');
+          </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="line" value="out">
+              System.out.println('Hello, World');
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="line" value="echo">
+              echo 'Hello World'; ?>;
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="line" value="puts">
+              puts 'Hello, world'
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="line" value="hello">
+              .hello_word { text-align: left; }
+            </label>
+          </div>
         <!-- Radio item -->
         <div class="radio">
           <h2 id="role_styles">What kind of role would you like to have?</h2>
