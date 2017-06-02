@@ -1,17 +1,18 @@
+var c_total = 0;
+var java_total = 0;
+var php_total = 0;
+var ruby_total = 0;
+var css_total = 0;
+
 $(document).ready(function() {
   $("#submitButton").click(function(event) {
     event.preventDefault();
+
     var formName = $("#name").val();
     var formType = $("#type").val();
     var formCompany = $("#company").val();
     var formLine = $("#line").val();
     var formRole = $("input:radio[name=role]:checked").val();
-
-    var c_total = 0;
-    var java_total = 0;
-    var php_total = 0;
-    var ruby_total = 0;
-    var css_total = 0;
 
     $("span.name").text(formName);
     $("#thanks").fadeToggle();
